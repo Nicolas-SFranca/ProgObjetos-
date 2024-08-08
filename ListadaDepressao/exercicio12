@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Exerc1{
+    public static void main (String[] args) 
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println ("Digite o saldo inicial") ;
+        double saldoin= sc.nextDouble();
+        System.out.println ("Digite o valor dos juros") ;
+        int juros = sc.nextInt();
+        System.out.println ("Digite a quantidade de meses") ;
+        int meses = sc.nextInt();
+        juros= juros /100;
+
+        double valorfinal= saldoin * (1+ juros) * meses;
+
+        System.out.println(valorfinal);
+
+    }
+}
