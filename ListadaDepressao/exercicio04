@@ -1,22 +1,19 @@
 import java.util.Scanner;
 
-public class Exerc1{
-    public static void main (String[] args) 
-    {
-        Scanner sc= new Scanner(System.in);
-        System.out.println ("Digite o valor do lado1") ;
-        double valor1= sc.nextDouble();
-        System.out.println ("Digite o valor do lado2") ;
-        double valor2= sc.nextDouble();
-        System.out.println ("Digite o angulo") ;
-        double angulo= sc.nextDouble();
-        double randius= angulo * (3.14 /180)
-
-
+public class Exerc12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in)
+        System.out.println("Digite o valor do lado 1:");
+        double lado1 = sc.nextDouble()
+        System.out.println("Digite o valor do lado 2:");
+        double lado2 = sc.nextDouble();
+        System.out.println("Digite o ângulo entre os lados (em graus):");
+        double anguloGraus = sc.nextDouble();
         
-        double area = (valor1 * valor2) *Math.sin(randius) / 2;
-
-        System.out.println(area);
-
+        double anguloRadianos = anguloGraus * (Math.PI / 180.0);
+        double area = (lado1 * lado2 * Math.sin(anguloRadianos)) / 2.0;
+        
+        System.out.printf(area);
+        sc.close();
     }
 }
